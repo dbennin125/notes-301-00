@@ -14,13 +14,22 @@ What does the node package manager do?
 Provide code snippets showing 3 different ways to export a function from a node module
 Document the following Vocabulary Terms
 Term
-ecosystem
-Node.js
-V8 Engine
-module
-package
-node package manager (npm)
-server
-environment
-interpreter
-compiler
+ecosystem-
+
+Node.js-
+
+V8 Engine-
+
+module-
+
+package-bits of re-usable. A directory with one of files in it. (package.json which has meta-data)
+
+node package manager (npm)- makes it easy for Javascript devs to share code that solves problems. Can refer to the website, directory/CLI or the client/registry.
+
+server-
+
+environment-
+
+interpreter-
+
+compiler-
