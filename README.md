@@ -28,9 +28,9 @@ Export literals as anonymous function
 module.exports = function (whatever) {
     console.log(whatever)
 }
-
+</code>
 export  as a class:
-
+<code>
 module.exports = function(thing1, thing2) {
     this.thing1 = thing1,
     this.thing2 = thing2
@@ -39,8 +39,9 @@ module.exports = function(thing1, thing2) {
         return this.thing1 + this.thing2;
     }
 }
+</code>
 Load Module from separate folder
-
+<code>
 const newthing = require('./data(source of data).js);
 </code>
 Source: https://www.tutorialsteacher.com/nodejs/nodejs-module-exports.
