@@ -24,10 +24,11 @@ Source: https://www.tutorialsteacher.com/nodejs/what-is-node-package-manager
 
 Provide code snippets showing 3 different ways to export a function from a node module
 Export literals as anonymous function 
-
+<code>
 module.exports = function (whatever) {
     console.log(whatever)
 }
+
 export  as a class:
 
 module.exports = function(thing1, thing2) {
@@ -40,7 +41,8 @@ module.exports = function(thing1, thing2) {
 }
 Load Module from separate folder
 
-var newthing = require('./data(source of data).js);
+const newthing = require('./data(source of data).js);
+</code>
 Source: https://www.tutorialsteacher.com/nodejs/nodejs-module-exports.
 
 Document the following Vocabulary Terms:
