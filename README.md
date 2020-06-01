@@ -16,16 +16,36 @@ What is the difference between a module and a package?
 A module is a single file(or files) that are imported under one import. A package is a collection of modules in directories that give a heierarcy. 
 Source: https://stackoverflow.com/questions/7948494/whats-the-difference-between-a-python-module-and-a-python-package
 
-Not in python, they seem to be interchangeable. 
+Not in python tho, they seem to be interchangeable. 
 
 What does the node package manager do?
 It's a command line tool that updates, installs, uninstalls Node.js packages in your app. It's an online open source repo. 
 Source: https://www.tutorialsteacher.com/nodejs/what-is-node-package-manager
 
 Provide code snippets showing 3 different ways to export a function from a node module
-Document the following Vocabulary Terms
-Term
-ecosystem-
+Export literals as anonymous function 
+
+module.exports = function (whatever) {
+    console.log(whatever)
+}
+export  as a class:
+
+module.exports = function(thing1, thing2) {
+    this.thing1 = thing1,
+    this.thing2 = thing2
+
+    this.function = function() {
+        return this.thing1 + this.thing2;
+    }
+}
+Load Module from separate folder
+
+var newthing = require('./data(source of data).js);
+Source: https://www.tutorialsteacher.com/nodejs/nodejs-module-exports.
+
+Document the following Vocabulary Terms:
+
+ecosystem- "Digital ecosystem models are informed by knowledge of natural ecosystems, especially for aspects related to competition and collaboration among diverse entities." directally from source: https://en.wikipedia.org/wiki/Digital_ecosystem
 
 Node.js- a platform built on Chrome's Javascript runtime with the purpose of building scalable network apps(also build them fast).
 
@@ -39,9 +59,9 @@ node package manager (npm)- makes it easy for Javascript devs to share code that
 
 server-computer or computer program which manages access to a centralized resource or services in a network. They are usualy dedicated to only servers tasks.
 
-environment-
+environment- a place to add variables and pull them into being used across across different files. 
 
-interpreter-
+interpreter- program that reads and executes code. Example: Perl, Python and Ruby.
 
 compiler- a computer program that translates computer code written in one programming lagnuage (the original sorce language) into another language(the target language). Typicaly meant that it will translate high level programming code to lower level language for the purpose of execution. 
 
